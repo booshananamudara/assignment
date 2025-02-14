@@ -39,15 +39,22 @@ body {
     text-decoration: none;
     font-size: 16px;
   }
-  .floating-logos {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+  #left .row-one {
+    display: flex;
+    justify-content: end;
   }
-  
+  #left .row-two{
+    display: flex;
+    justify-content: center;
+  }
+  #left .row-three {
+    display: flex;
+    justify-content: space-between;
+  }
+  #left .row-four {
+    display: flex;
+    justify-content: center;
+  }
   .floating-logos img {
     width: 80px;
     height: 80px;
