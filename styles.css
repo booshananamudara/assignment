@@ -24,26 +24,23 @@ body {
     width:30%;
   }
   .hero-text {
-    width:40%;
+    width:30%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .hero-text h1 {
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px;
+    color: #000743;
   }
-  
+  .hero-text p {
+    font-size: 20px;
+    color: #000743;
+  }
   .hero-text p {
     font-size: 18px;
     margin-bottom: 30px;
-  }
-  
-  .cta-button {
-    padding: 12px 24px;
-    background-color: #ff3366;
-    color: white;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 16px;
   }
   #left .row-one {
     display: flex;
@@ -61,13 +58,38 @@ body {
     display: flex;
     justify-content: center;
   }
-  .floating-logos img {
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  #right .row-one {
+    display: flex;
+    justify-content: center;
   }
-  
+  #right .row-two {
+    display: flex;
+    justify-content: start;
+  }
+  #right .row-three {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #right .row-four {
+    display: flex;
+    justify-content: end;
+  }
+  .abc {
+    gap: 20px;
+  }
+  .logo-box {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 35px;
+    border-radius: 20px;
+  }
+  .cta-button {
+    padding: 12px 24px;
+    background-color: #ff3366;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+  }
   .cta-button:hover {
     background-color: #e62e5d;
   }
@@ -76,9 +98,53 @@ body {
     background: linear-gradient(135deg, #6b00f5, #ff00e6);
     color: white;
     text-align: center;
+    display: flex;
     padding: 50px;
     height: 70vh;
-  }
+    position: relative;
+}
+.ai-text {
+  align-items: left;
+  width: 55vw;
+}
+.ai-text h1 {
+  font-size: 60px;
+}
+
+.guide-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #6b00f5;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.image-container {
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-image {
+    min-width: 300px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.back {
+    transform: translateX(50px) translateY(-50px); 
+    opacity: 0.8;
+}
+
+.front {
+    transform: translateX(-50px);
+}
+
   
   .rating-section {
     background-color: #f9f9f9;
@@ -99,8 +165,12 @@ body {
   .journey-section {
     background: linear-gradient(135deg, #0011ff, #00bbff);
     text-align: center;
-    color: white;
     padding: 50px;
     height: 80vh;
+  }
+  .journey-section h1 {
+    color: white;
+    font-size: 80px;
+    line-height: 80px;
   }
   
