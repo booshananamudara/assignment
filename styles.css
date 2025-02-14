@@ -15,10 +15,16 @@ body {
     text-align: center;
   }
   #left {
-      margin-left: 0;
+  
+      width:30%;
+  }
+
+  #right{
+  
+    width:30%;
   }
   .hero-text {
-      width: 30vw;
+    width:40%;
   }
   .hero-text h1 {
     font-size: 60px;
