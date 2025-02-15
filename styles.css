@@ -165,12 +165,17 @@ body {
     text-align: center;
     padding: 50px;
     height: 100vh;
+    align-items: center;
   }
-  .silder {
-    width: min-content;
+  .slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("./assets/section3-bg.png");
+    background-size: cover;
+    background-position-x: 0%;
   }
-  
+
   .rating-card {
     display: inline-block;
     padding: 20px;
@@ -191,6 +196,10 @@ body {
     text-align: center;
     padding: 50px;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
   }
   .journey-section h1 {
     color: white;
