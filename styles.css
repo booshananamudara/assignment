@@ -15,7 +15,6 @@ body {
     text-align: center;
   }
   #left {
-  
       width:30%;
   }
 
@@ -24,7 +23,7 @@ body {
     width:30%;
   }
   .hero-text {
-    width:30%;
+    width:35%;
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -91,14 +90,15 @@ body {
   }
   .cta-button {
     display: flex;
-    padding: 12px 24px;
+    padding: 12px 18px;
     background-color: #ff3366;
     color: white;
     border-radius: 8px;
     text-decoration: none;
     font-size: 16px;
     justify-content: center;
-    width: 250px;
+    width: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
   }
   .cta-button:hover {
     background-color: #e62e5d;
@@ -130,7 +130,7 @@ body {
 }
 
 .guide-button {
-    display: inline-block;
+    display: flex;
     margin-top: 2px;
     padding: 12px 24px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -138,6 +138,7 @@ body {
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
+    width: fit-content;
     transition: all 0.3s ease-in-out;
 }
 
@@ -167,8 +168,6 @@ body {
     transform: translate(-50px, 80px);
 }
 
-
-  
   .rating-section {
     display: flex;
     background-color: #f9f9f9;
@@ -176,11 +175,13 @@ body {
     padding: 50px;
     height: 100vh;
     align-items: center;
+    justify-content: center;
   }
   .slider-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 10%;
     background-image: url("./assets/section3-bg.png");
     background-size: cover;
     background-position-x: 0%;
@@ -202,10 +203,11 @@ body {
   }
   
   .journey-section {
-    background: linear-gradient(135deg, #0011ff, #00bbff);
+    background: #000743;
     text-align: center;
-    padding: 50px;
-    height: 80vh;
+    padding-left: 350px;
+    padding-right: 350px;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,5 +217,16 @@ body {
     color: white;
     font-size: 80px;
     line-height: 80px;
+  }
+  .journey-button {
+    display: flex;
+    padding: 12px 18px;
+    background-color: #ff3366;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    justify-content: center;
+    width: fit-content;
   }
   
