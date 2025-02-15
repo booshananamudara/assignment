@@ -122,15 +122,20 @@ body {
 
 .ai-bg{
   position: absolute ;
-  top:-67%;
-  left: -38%;
-  z-index: 20;
+  top:-47%;
+  left: -18%;
+  z-index: 10;
 
+}
+.grid-bg {
+  position: absolute ;
+  top:-47%;
+  left: 38%;
+  z-index: 10;
 }
 
 .ai-text {
     max-width: 60%;
-    z-index: 50;
 }
 
 .ai-text h1 {
@@ -160,7 +165,7 @@ body {
 
 .image-container {
     position: relative;
-    width: 45%;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,17 +194,26 @@ body {
     height: 100vh;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
   }
   .slider-container{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-right: 10%;
-    background-image: url("./assets/section3-bg.png");
     background-size: cover;
     background-position-x: 0%;
   }
-
+  .bg-wave {
+    position: absolute ;
+    top:-5%;
+    left: -35%;
+    z-index: 1;
+  }
+  .top-spacer {
+    background-image: url("./assets/section3-top.png");
+  }
   .rating-card {
     display: inline-block;
     padding: 20px;
@@ -224,6 +238,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
+    position: relative;
 
   }
   .journey-section h1 {
@@ -242,7 +258,21 @@ body {
     justify-content: center;
     width: fit-content;
   }
-  .left-arrow i {
-    font-size: 100px;
-    font-weight: 100;
+  .journey-bg {
+    position: absolute;
+    top:-240%;
+    left: -2%;
+    z-index: 1;
+  }
+  grid-one {
+    position: absolute;
+    top:-100%;
+    left: 20%;
+    z-index: 1;
+  }
+  grid-two {
+    position: absolute;
+    top:-240%;
+    left: -2%;
+    z-index: 1;
   }
