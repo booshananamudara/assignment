@@ -14,19 +14,13 @@ body {
   text-align: center;
 }
 
-#left {
-  width: 30%;
-}
-
-#right {
-
+#left, #right {
   width: 30%;
 }
 
 .hero-text {
   width: 35%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 0 5%;
 }
 
 .hero-text h1 {
@@ -37,21 +31,17 @@ body {
 }
 
 .hero-text p {
-  font-size: 20px;
-  color: #000743;
-}
-
-.hero-text p {
   font-size: 18px;
+  color: #000743;
   margin-bottom: 30px;
 }
 
-#left .row-one {
+#left .row-one, #right .row-four {
   display: flex;
   justify-content: end;
 }
 
-#left .row-two {
+#left .row-two, #left .row-four, #right .row-one {
   display: flex;
   justify-content: center;
 }
@@ -59,16 +49,6 @@ body {
 #left .row-three {
   display: flex;
   justify-content: space-between;
-}
-
-#left .row-four {
-  display: flex;
-  justify-content: center;
-}
-
-#right .row-one {
-  display: flex;
-  justify-content: center;
 }
 
 #right .row-two {
@@ -81,12 +61,7 @@ body {
   justify-content: flex-end;
 }
 
-#right .row-four {
-  display: flex;
-  justify-content: end;
-}
-
-.abc {
+.sequantial {
   gap: 20px;
 }
 
@@ -96,14 +71,13 @@ body {
   border-radius: 20px;
 }
 
-.cta-button-container {
+.button-container {
   width: 100%;
   display: flex;
   justify-content: center;
-
 }
 
-.cta-button {
+.red-button, .journey-button {
   display: flex;
   padding: 12px 18px;
   background-color: #ff3366;
@@ -116,7 +90,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 5px;
 }
 
-.cta-button:hover {
+.red-button:hover {
   background-color: #e62e5d;
 }
 
@@ -138,26 +112,25 @@ body {
   overflow: hidden;
 }
 
-.ai-bg {
+.ai-bg, .grid-bg {
   position: absolute;
   top: -47%;
-  left: -18%;
   z-index: 10;
+}
 
+.ai-bg {
+  left: -18%;
 }
 
 .grid-bg {
-  position: absolute;
-  top: -47%;
   left: 38%;
-  z-index: 10;
 }
 
-.ai-text {
+.ai-main-text {
   max-width: 60%;
 }
 
-.ai-text h1 {
+.ai-main-text h1 {
   font-size: 60px;
   font-weight: bold;
   line-height: 1.2;
@@ -175,7 +148,6 @@ body {
   width: fit-content;
   transition: all 0.3s ease-in-out;
   z-index: 1000;
-
 }
 
 .guide-button:hover {
@@ -234,24 +206,19 @@ body {
   z-index: 1;
 }
 
-.top-spacer {
-  background-image: url("./assets/section3-top.png");
-}
-
-.rating-card {
+.rating-detail {
   display: inline-block;
   padding: 20px;
   max-width: 600px;
   text-align: left;
-
 }
 
-.rating-card h1 {
+.rating-detail h1 {
   font-size: 60px;
   line-height: 60px;
 }
 
-.rating-card p {
+.rating-detail p {
   font-size: 20px;
 }
 
@@ -265,7 +232,6 @@ body {
   justify-content: center;
   overflow: hidden;
   position: relative;
-
 }
 
 .main-text {
@@ -277,18 +243,6 @@ body {
   color: white;
   font-size: 80px;
   line-height: 80px;
-}
-
-.journey-button {
-  display: flex;
-  padding: 12px 18px;
-  background-color: #ff3366;
-  color: white;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 16px;
-  justify-content: center;
-  width: fit-content;
 }
 
 .journey-bg {
