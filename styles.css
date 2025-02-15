@@ -242,4 +242,7 @@ body {
     justify-content: center;
     width: fit-content;
   }
-  
+  .left-arrow i {
+    font-size: 100px;
+    font-weight: 100;
+  }
