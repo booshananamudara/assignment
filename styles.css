@@ -117,10 +117,20 @@ body {
     padding: 50px 5%;
     height: 60vh;
     position: relative;
+    overflow: hidden;
+}
+
+.ai-bg{
+  position: absolute ;
+  top:-67%;
+  left: -38%;
+  z-index: 20;
+
 }
 
 .ai-text {
     max-width: 60%;
+    z-index: 50;
 }
 
 .ai-text h1 {
@@ -140,6 +150,8 @@ body {
     font-weight: bold;
     width: fit-content;
     transition: all 0.3s ease-in-out;
+    z-index: 1000;
+
 }
 
 .guide-button:hover {
@@ -158,6 +170,7 @@ body {
     min-width: 300px;
     border-radius: 10px;
     position: absolute;
+    z-index: 50;
 }
 
 .back {
